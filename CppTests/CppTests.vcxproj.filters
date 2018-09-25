@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="cpp11">
+      <UniqueIdentifier>{98bfc176-727e-4dfa-b82e-66c9f7c90608}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cpp03">
+      <UniqueIdentifier>{4bee204d-4313-472c-b5bf-2fda650579a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cpp03\template">
+      <UniqueIdentifier>{4d5cfab8-a224-48ce-aa7d-2fbb9a7231d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cpp03\tester">
+      <UniqueIdentifier>{f35d872c-2a21-4849-bf30-d61fd3f35960}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cpp03\pattern">
+      <UniqueIdentifier>{b0daf5c7-e371-485f-84c2-d4f9ce0c2dcb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cpp03\pattern\factory">
+      <UniqueIdentifier>{5d1e4418-7f1c-4a30-ab32-1dde8bb72c3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cpp03\pattern\singleton">
+      <UniqueIdentifier>{93756f12-b40c-4521-b4f4-2dea2d4cdfa9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="cpp11\TesterCPP11.cpp">
+      <Filter>cpp11</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp03\TemplateExplicit.cpp">
+      <Filter>cpp03\template</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp03\TesterCPP03.cpp">
+      <Filter>cpp03\tester</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp03\PatternDeviceA.cpp">
+      <Filter>cpp03\pattern\factory</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp03\PatternDeviceB.cpp">
+      <Filter>cpp03\pattern\factory</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp03\PatternDeviceFactory.cpp">
+      <Filter>cpp03\pattern\factory</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp03\PatternSingleton.cpp">
+      <Filter>cpp03\pattern\singleton</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cpp11\TesterCPP11.h">
+      <Filter>cpp11</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp03\TemplateExplicit.h">
+      <Filter>cpp03\template</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp03\TemplateImplicit.h">
+      <Filter>cpp03\template</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp03\TesterCPP03.h">
+      <Filter>cpp03\tester</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp03\PatternDeviceA.h">
+      <Filter>cpp03\pattern\factory</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp03\PatternDeviceB.h">
+      <Filter>cpp03\pattern\factory</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp03\PatternDeviceFactory.h">
+      <Filter>cpp03\pattern\factory</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp03\PatternInterface.h">
+      <Filter>cpp03\pattern\factory</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp03\PatternSingleton.h">
+      <Filter>cpp03\pattern\singleton</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
