@@ -24,3 +24,5 @@ void PatternSingleton::dataSet(int value)
 {
 	data = value;
 }
+
+PatternSingleton * PatternSingleton::instance = 0;

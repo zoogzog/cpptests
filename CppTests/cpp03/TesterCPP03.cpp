@@ -39,9 +39,24 @@ void TesterCPP03::test101()
 
 }
 
+void TesterCPP03::test102()
+{
+	PatternSingleton * singletonA = PatternSingleton::getInstance();
+	PatternSingleton * singletonB = PatternSingleton::getInstance();
+
+	singletonA->dataSet(1543);
+
+	cout << "-------------------------------------------------------------------------" << endl;
+	cout << "Test CPP03 102: Design patterns - Singleton" << endl;
+	cout << "SingletonA: " << singletonA->dataGet() << endl;
+	cout << "SingletonB: " << singletonB->dataGet() << endl;
+
+}
+
 void TesterCPP03::run()
 {
 	test001();
 
 	test101();
+	test102();
 }

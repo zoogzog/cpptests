@@ -5,6 +5,7 @@
 #include "TemplateImplicit.h"
 #include "TemplateExplicit.h"
 #include "PatternDeviceFactory.h"
+#include "PatternSingleton.h"
 
 
 using namespace std;
@@ -18,7 +19,8 @@ private:
 
 	//---- TEST101 Pattern: FACTORY & INTERFACE
 	void test101();
-	//---- TEST102Pattern: 
+	//---- TEST102Pattern: SINGLETON
+	void test102();
 
 public:
 	void run();
