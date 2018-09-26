@@ -4,7 +4,7 @@ PatternDeviceInterface * PatternDeviceFactory::getDeviceInterface(PatternDeviceT
 {
 	switch (type)
 	{
-	case DEVICE_A: return new PatternDeviceA();
-	case DEVICE_B: return new PatternDeviceB();
+	case DEVICE_A: return new PatternDeviceA;
+	case DEVICE_B: return new PatternDeviceB;
 	}
 }

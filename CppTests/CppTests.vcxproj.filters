@@ -26,12 +26,21 @@
     <Filter Include="cpp03\pattern\singleton">
       <UniqueIdentifier>{93756f12-b40c-4521-b4f4-2dea2d4cdfa9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="cpp03\pattern\prototype">
+      <UniqueIdentifier>{892baee0-779f-4abd-9e88-17f245a26e48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cpp03\pattern\builder">
+      <UniqueIdentifier>{cb8dd52f-cc37-41f5-af26-95e0c58a1c22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cpp11\tester">
+      <UniqueIdentifier>{da2e1ae9-4d1e-42f3-adf6-18838cf4b322}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cpp11\utils">
+      <UniqueIdentifier>{c8ff5de8-e1a8-4b8e-a84a-3fa73957d5c6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="cpp11\TesterCPP11.cpp">
-      <Filter>cpp11</Filter>
-    </ClCompile>
     <ClCompile Include="cpp03\TemplateExplicit.cpp">
       <Filter>cpp03\template</Filter>
     </ClCompile>
@@ -50,11 +59,17 @@
     <ClCompile Include="cpp03\PatternSingleton.cpp">
       <Filter>cpp03\pattern\singleton</Filter>
     </ClCompile>
+    <ClCompile Include="cpp03\PatternPrototype.cpp">
+      <Filter>cpp03\pattern\prototype</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp03\PatternBuilder.cpp">
+      <Filter>cpp03\pattern\builder</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp11\TesterCPP11.cpp">
+      <Filter>cpp11\tester</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="cpp11\TesterCPP11.h">
-      <Filter>cpp11</Filter>
-    </ClInclude>
     <ClInclude Include="cpp03\TemplateExplicit.h">
       <Filter>cpp03\template</Filter>
     </ClInclude>
@@ -78,6 +93,18 @@
     </ClInclude>
     <ClInclude Include="cpp03\PatternSingleton.h">
       <Filter>cpp03\pattern\singleton</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp03\PatternPrototype.h">
+      <Filter>cpp03\pattern\prototype</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp03\PatternBuilder.h">
+      <Filter>cpp03\pattern\builder</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp11\TesterCPP11.h">
+      <Filter>cpp11\tester</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp11\CPP11Utils.h">
+      <Filter>cpp11\utils</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
