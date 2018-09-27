@@ -10,11 +10,10 @@ void main()
 	cout << "Testing C++ 03/11/14/17 functionality" << endl;
 
 	TesterCPP03 testercpp03;
-	testercpp03.run();
-
 	TesterCPP11 testercpp11;
-	testercpp11.run();
 
+	//testercpp11.run(TesterCPP11::TestName11::TEST001);
+	testercpp03.run(TesterCPP03::TestName03::TEST105);
 
 	//---- Prevent console from closing
 	getchar();

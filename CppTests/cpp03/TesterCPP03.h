@@ -10,10 +10,13 @@
 #include "PatternSingleton.h"
 #include "PatternPrototype.h"
 #include "PatternBuilder.h"
+#include "PatternObjectPool.h"
 
 typedef std::chrono::high_resolution_clock Clock;
 
 using namespace std;
+
+
 
 class TesterCPP03
 {
@@ -30,8 +33,12 @@ private:
 	void test103();
 	//---- TEST104 Pattern: Builder
 	void test104();
+	//---- TEST105 Pattern: Object pool
+	void test105();
 
 
 public:
-	void run();
+	enum TestName03 { TEST001, TEST101, TEST102, TEST103, TEST104, TEST105 };
+
+	void run(TestName03 testname);
 };

@@ -1,7 +1,7 @@
 #include "TesterCPP11.h"
 
 //========================================================================================
-//---- C++11 Utilities: delete, bind, auto, variadic template
+//---- TEST 001: Generalized constant expressions
 void TesterCPP11::test001()
 {
 	int array[TesterCPP11::getint() + 1];
@@ -12,6 +12,8 @@ void TesterCPP11::test001()
 	cout << "Function returns " << TesterCPP11::getint() << ", elements in array - " << sizeof(array) / sizeof(array[0]) << endl;
 }
 
+//========================================================================================
+//---- TEST 002: Initializer lists
 void TesterCPP11::test002()
 {
 	ClassInitializerList test = { 1, 2, 3 };
@@ -26,6 +28,8 @@ void TesterCPP11::test002()
 	vector <int> keke{ 1, 2, 3, 4, 5 };
 }
 
+//========================================================================================
+//---- TEST 003: delete keyword
 void TesterCPP11::test003()
 {
 	cout << "-------------------------------------------------------------------------" << endl;
@@ -38,6 +42,8 @@ void TesterCPP11::test003()
 
 }
 
+//========================================================================================
+//---- TEST 004: Bind
 void TesterCPP11::test004()
 {
 	cout << "-------------------------------------------------------------------------" << endl;
@@ -55,8 +61,8 @@ void TesterCPP11::test004()
 	cout << "Auto function: " << func() << endl;
 }
 
-
-
+//========================================================================================
+//---- TEST 005: Variadic template functions
 
 void TesterCPP11::test005()
 {
@@ -66,11 +72,15 @@ void TesterCPP11::test005()
 	cout << "end: " <<vtemplatesum(2, 3.4, "aaa") << endl;
 }
 
-void TesterCPP11::run()
+void TesterCPP11::run(TestName11 testname)
 {
-	test001();
-	test002();
-	test003();
-	test004();
-	test005();
+	switch (testname)
+	{
+		
+	case TEST001: test001(); break;
+	case TEST002: test002(); break;
+	case TEST003: test003(); break;
+	case TEST004: test004(); break;
+	case TEST005: test005(); break;
+	}
 }

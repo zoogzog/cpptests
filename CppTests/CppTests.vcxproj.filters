@@ -38,6 +38,12 @@
     <Filter Include="cpp11\utils">
       <UniqueIdentifier>{c8ff5de8-e1a8-4b8e-a84a-3fa73957d5c6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="readme">
+      <UniqueIdentifier>{d3f45724-f73f-4e3a-9a09-7858db59adb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cpp03\pattern\objectpool">
+      <UniqueIdentifier>{f5482f2c-1616-4590-b0b8-66827de30a9a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
@@ -70,6 +76,9 @@
     </ClCompile>
     <ClCompile Include="cpp11\CPP11Utils.cpp">
       <Filter>cpp11\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp03\PatternObjectPool.cpp">
+      <Filter>cpp03\pattern\objectpool</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -109,5 +118,13 @@
     <ClInclude Include="cpp11\CPP11Utils.h">
       <Filter>cpp11\utils</Filter>
     </ClInclude>
+    <ClInclude Include="cpp03\PatternObjectPool.h">
+      <Filter>cpp03\pattern\objectpool</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Filter>readme</Filter>
+    </None>
   </ItemGroup>
 </Project>

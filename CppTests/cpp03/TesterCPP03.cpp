@@ -1,5 +1,7 @@
 #include "TesterCPP03.h"
 
+//========================================================================================
+//---- TEST 001: Template instantiation implicit vs explicit
 void TesterCPP03::test001()
 {
 	TemplateImplicit <int> templateINT(5);
@@ -23,7 +25,8 @@ void TesterCPP03::test001()
 
 }
 
-
+//========================================================================================
+//---- TEST 101: Design Pattern: Factory
 void TesterCPP03::test101()
 {
 	PatternDeviceInterface * deviceA = PatternDeviceFactory::getDeviceInterface(PatternDeviceType::DEVICE_A);
@@ -39,6 +42,8 @@ void TesterCPP03::test101()
 
 }
 
+//========================================================================================
+//---- TEST 102: Design Pattern: Singleton
 void TesterCPP03::test102()
 {
 	PatternSingleton * singletonA = PatternSingleton::getInstance();
@@ -53,10 +58,13 @@ void TesterCPP03::test102()
 
 }
 
+//========================================================================================
+//---- TEST 103: Design Pattern: Prototype
 void TesterCPP03::test103()
 {
 
-
+	//---- The purpose of this test is to check that the Prototyping will reduce time of 
+	//---- object generation
 	std::vector <PatternPrototypeInterface *> devicelist;
 
 	auto t1 = Clock::now();
@@ -87,6 +95,8 @@ void TesterCPP03::test103()
 	cout << "Speed up: " << (double)delta2 / delta1 << endl;
 }
 
+//========================================================================================
+//---- TEST 104: Design Pattern: Builder
 void TesterCPP03::test104()
 {
 	cout << "-------------------------------------------------------------------------" << endl;
@@ -109,12 +119,39 @@ void TesterCPP03::test104()
 
 }
 
-void TesterCPP03::run()
-{
-	test001();
+//========================================================================================
+//---- TEST 105: Design Pattern: Object pool
 
-	test101();
-	test102();
-	test103();
-	test104();
+void TesterCPP03::test105()
+{
+	cout << "-------------------------------------------------------------------------" << endl;
+	cout << "Test CPP03 105: Design patterns - Object pool" << endl;
+
+	PatternObjectPool * opool = PatternObjectPool::getInstance();
+
+	Resource * res1 = opool->resourceGet();
+	Resource * res2 = opool->resourceGet();
+	Resource * res3 = opool->resourceGet();
+	//--- Can't create
+	Resource * res4 = opool->resourceGet();
+	if (!res4) { cout << "Resource is empty!" << endl; }
+	
+	opool->resourceReturn(res3);
+
+	res4 = opool->resourceGet();
+	if (res4) { cout << "Got new resource" << endl; }
+}
+
+
+void TesterCPP03::run(TestName03 testname)
+{
+	switch (testname)
+	{
+	case TEST001: test001();  break;
+	case TEST101: test101();  break;
+	case TEST102: test102();  break;
+	case TEST103: test103();  break;
+	case TEST104: test104();  break;
+	case TEST105: test105();  break;
+	}
 }

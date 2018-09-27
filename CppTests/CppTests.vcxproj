@@ -119,6 +119,7 @@
     <ClCompile Include="cpp03\PatternDeviceA.cpp" />
     <ClCompile Include="cpp03\PatternDeviceB.cpp" />
     <ClCompile Include="cpp03\PatternDeviceFactory.cpp" />
+    <ClCompile Include="cpp03\PatternObjectPool.cpp" />
     <ClCompile Include="cpp03\PatternPrototype.cpp" />
     <ClCompile Include="cpp03\PatternSingleton.cpp" />
     <ClCompile Include="cpp03\TemplateExplicit.cpp" />
@@ -133,6 +134,7 @@
     <ClInclude Include="cpp03\PatternDeviceB.h" />
     <ClInclude Include="cpp03\PatternDeviceFactory.h" />
     <ClInclude Include="cpp03\PatternInterface.h" />
+    <ClInclude Include="cpp03\PatternObjectPool.h" />
     <ClInclude Include="cpp03\PatternPrototype.h" />
     <ClInclude Include="cpp03\PatternSingleton.h" />
     <ClInclude Include="cpp03\TemplateExplicit.h" />
@@ -140,6 +142,9 @@
     <ClInclude Include="cpp03\TesterCPP03.h" />
     <ClInclude Include="cpp11\CPP11Utils.h" />
     <ClInclude Include="cpp11\TesterCPP11.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\README.md" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
