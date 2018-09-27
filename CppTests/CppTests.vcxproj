@@ -123,6 +123,7 @@
     <ClCompile Include="cpp03\PatternSingleton.cpp" />
     <ClCompile Include="cpp03\TemplateExplicit.cpp" />
     <ClCompile Include="cpp03\TesterCPP03.cpp" />
+    <ClCompile Include="cpp11\CPP11Utils.cpp" />
     <ClCompile Include="cpp11\TesterCPP11.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
