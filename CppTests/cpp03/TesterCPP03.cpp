@@ -142,16 +142,32 @@ void TesterCPP03::test105()
 	if (res4) { cout << "Got new resource" << endl; }
 }
 
+//========================================================================================
+//---- TEST 106: Design Pattern: Adapter
+void TesterCPP03::test106()
+{
+	DeviceB * devb = new DeviceB();
+
+	Adapter * adapter = new Adapter();
+	adapter->setup(devb);
+
+	InterfaceDeviceA * devba = adapter;
+
+	cout <<"Adapter B->A [function_AAA]: "<< devba->function_AAA() << endl;
+	cout <<"Adapter B->A [function_BBB]: " << devba->function_BBB() << endl;
+
+}
 
 void TesterCPP03::run(TestName03 testname)
 {
 	switch (testname)
 	{
-	case TEST001: test001();  break;
-	case TEST101: test101();  break;
-	case TEST102: test102();  break;
-	case TEST103: test103();  break;
-	case TEST104: test104();  break;
-	case TEST105: test105();  break;
+	case TEST001: test001(); break;
+	case TEST101: test101(); break;
+	case TEST102: test102(); break;
+	case TEST103: test103(); break;
+	case TEST104: test104(); break;
+	case TEST105: test105(); break;
+	case TEST106: test106(); break;
 	}
 }

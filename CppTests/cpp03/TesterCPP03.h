@@ -11,6 +11,7 @@
 #include "PatternPrototype.h"
 #include "PatternBuilder.h"
 #include "PatternObjectPool.h"
+#include "PatternAdapter.h"
 
 typedef std::chrono::high_resolution_clock Clock;
 
@@ -35,10 +36,11 @@ private:
 	void test104();
 	//---- TEST105 Pattern: Object pool
 	void test105();
-
+	//---- TEST106 Pattern: Adapter
+	void test106();
 
 public:
-	enum TestName03 { TEST001, TEST101, TEST102, TEST103, TEST104, TEST105 };
+	enum TestName03 { TEST001, TEST101, TEST102, TEST103, TEST104, TEST105, TEST106 };
 
 	void run(TestName03 testname);
 };

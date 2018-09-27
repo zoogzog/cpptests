@@ -44,6 +44,9 @@
     <Filter Include="cpp03\pattern\objectpool">
       <UniqueIdentifier>{f5482f2c-1616-4590-b0b8-66827de30a9a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="cpp03\pattern\adapter">
+      <UniqueIdentifier>{64d4ae74-7cd5-403b-9acc-9cdb9f2d579e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
@@ -79,6 +82,9 @@
     </ClCompile>
     <ClCompile Include="cpp03\PatternObjectPool.cpp">
       <Filter>cpp03\pattern\objectpool</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp03\PatternAdapter.cpp">
+      <Filter>cpp03\pattern\adapter</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -120,6 +126,9 @@
     </ClInclude>
     <ClInclude Include="cpp03\PatternObjectPool.h">
       <Filter>cpp03\pattern\objectpool</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp03\PatternAdapter.h">
+      <Filter>cpp03\pattern\adapter</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

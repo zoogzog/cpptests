@@ -115,6 +115,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="cpp03\PatternAdapter.cpp" />
     <ClCompile Include="cpp03\PatternBuilder.cpp" />
     <ClCompile Include="cpp03\PatternDeviceA.cpp" />
     <ClCompile Include="cpp03\PatternDeviceB.cpp" />
@@ -129,6 +130,7 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="cpp03\PatternAdapter.h" />
     <ClInclude Include="cpp03\PatternBuilder.h" />
     <ClInclude Include="cpp03\PatternDeviceA.h" />
     <ClInclude Include="cpp03\PatternDeviceB.h" />
