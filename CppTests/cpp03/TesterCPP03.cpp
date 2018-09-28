@@ -158,6 +158,27 @@ void TesterCPP03::test106()
 
 }
 
+//========================================================================================
+//---- TEST 107: Design Pattern: Adapter
+void TesterCPP03::test107()
+{
+	OSInterface * windows = new OSWindows();
+	OSInterface * ubuntu = new OSUbuntu();
+
+	Application * app1 = new NukeLauncher();
+	Application * app2 = new MoonrocketLauncher();
+
+	app1->setup(windows);
+	app1->sendemail();
+	app1->dosomething();
+
+	app1->setup(ubuntu);
+	app1->dosomething();
+
+	app2->setup(ubuntu);
+	app2->dosomething();
+}
+
 void TesterCPP03::run(TestName03 testname)
 {
 	switch (testname)
@@ -169,5 +190,6 @@ void TesterCPP03::run(TestName03 testname)
 	case TEST104: test104(); break;
 	case TEST105: test105(); break;
 	case TEST106: test106(); break;
+	case TEST107: test107(); break;
 	}
 }

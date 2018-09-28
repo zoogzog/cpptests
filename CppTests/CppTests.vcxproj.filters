@@ -47,6 +47,9 @@
     <Filter Include="cpp03\pattern\adapter">
       <UniqueIdentifier>{64d4ae74-7cd5-403b-9acc-9cdb9f2d579e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="cpp03\pattern\bridge">
+      <UniqueIdentifier>{abffe948-89e1-4cd9-92d3-26749e961c9f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
@@ -85,6 +88,9 @@
     </ClCompile>
     <ClCompile Include="cpp03\PatternAdapter.cpp">
       <Filter>cpp03\pattern\adapter</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp03\PatternBridge.cpp">
+      <Filter>cpp03\pattern\bridge</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -129,6 +135,9 @@
     </ClInclude>
     <ClInclude Include="cpp03\PatternAdapter.h">
       <Filter>cpp03\pattern\adapter</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp03\PatternBridge.h">
+      <Filter>cpp03\pattern\bridge</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
