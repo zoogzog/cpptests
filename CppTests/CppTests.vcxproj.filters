@@ -50,6 +50,12 @@
     <Filter Include="cpp03\pattern\bridge">
       <UniqueIdentifier>{abffe948-89e1-4cd9-92d3-26749e961c9f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="cpp03\pattern\composite">
+      <UniqueIdentifier>{42c57f7c-af3e-495f-93de-b3480dd6fb46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cpp03\pattern\decorator">
+      <UniqueIdentifier>{a9cb5f7d-e037-4929-bbd4-8dd540b9b06d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
@@ -91,6 +97,12 @@
     </ClCompile>
     <ClCompile Include="cpp03\PatternBridge.cpp">
       <Filter>cpp03\pattern\bridge</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp03\PatternComposite.cpp">
+      <Filter>cpp03\pattern\composite</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp03\PatternDecorator.cpp">
+      <Filter>cpp03\pattern\decorator</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -138,6 +150,12 @@
     </ClInclude>
     <ClInclude Include="cpp03\PatternBridge.h">
       <Filter>cpp03\pattern\bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp03\PatternComposite.h">
+      <Filter>cpp03\pattern\composite</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp03\PatternDecorator.h">
+      <Filter>cpp03\pattern\decorator</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

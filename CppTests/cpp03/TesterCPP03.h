@@ -13,6 +13,8 @@
 #include "PatternObjectPool.h"
 #include "PatternAdapter.h"
 #include "PatternBridge.h"
+#include "PatternComposite.h"
+#include "PatternDecorator.h"
 
 typedef std::chrono::high_resolution_clock Clock;
 
@@ -41,9 +43,13 @@ private:
 	void test106();
 	//---- TEST107 Pattern: Bridge
 	void test107();
+	//---- TEST108 Pattern: Composite
+	void test108();
+	//---- TEST109 Pattern: Decorator
+	void test109();
 
 public:
-	enum TestName03 { TEST001, TEST101, TEST102, TEST103, TEST104, TEST105, TEST106, TEST107};
+	enum TestName03 { TEST001, TEST101, TEST102, TEST103, TEST104, TEST105, TEST106, TEST107, TEST108, TEST109};
 
 	void run(TestName03 testname);
 };

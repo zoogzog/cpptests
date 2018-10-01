@@ -179,6 +179,42 @@ void TesterCPP03::test107()
 	app2->dosomething();
 }
 
+void TesterCPP03::test108()
+{
+	CompositeObject * obj = new CompositeObject();
+	obj->methodA();
+
+	CompositeObjectCollection collection;
+
+	for (int k = 0; k < 5; k++)
+	{
+		CompositeObject * tobj = new CompositeObject();
+		collection.add(tobj);
+	}
+
+	collection.methodA();
+
+}
+
+void TesterCPP03::test109()
+{
+	SimpleChair * chairSimple = new SimpleChair();
+
+	chairSimple->make();
+
+	ClassyChair * chairClassy = new ClassyChair(chairSimple);
+	FancyChair * chairFancy = new FancyChair(chairSimple);
+
+	chairClassy->make();
+	chairFancy->make();
+
+	Table table;
+
+	FancyTable<Table> tableFancy(4);
+	tableFancy.make();
+	tableFancy.breaktable();
+}
+
 void TesterCPP03::run(TestName03 testname)
 {
 	switch (testname)
@@ -191,5 +227,7 @@ void TesterCPP03::run(TestName03 testname)
 	case TEST105: test105(); break;
 	case TEST106: test106(); break;
 	case TEST107: test107(); break;
+	case TEST108: test108(); break;
+	case TEST109: test109(); break;
 	}
 }
