@@ -123,8 +123,11 @@
     <ClCompile Include="cpp03\PatternDeviceA.cpp" />
     <ClCompile Include="cpp03\PatternDeviceB.cpp" />
     <ClCompile Include="cpp03\PatternDeviceFactory.cpp" />
+    <ClCompile Include="cpp03\PatternFacade.cpp" />
+    <ClCompile Include="cpp03\PatternFlyweight.cpp" />
     <ClCompile Include="cpp03\PatternObjectPool.cpp" />
     <ClCompile Include="cpp03\PatternPrototype.cpp" />
+    <ClCompile Include="cpp03\PatternProxy.cpp" />
     <ClCompile Include="cpp03\PatternSingleton.cpp" />
     <ClCompile Include="cpp03\TemplateExplicit.cpp" />
     <ClCompile Include="cpp03\TesterCPP03.cpp" />
@@ -141,9 +144,12 @@
     <ClInclude Include="cpp03\PatternDeviceA.h" />
     <ClInclude Include="cpp03\PatternDeviceB.h" />
     <ClInclude Include="cpp03\PatternDeviceFactory.h" />
+    <ClInclude Include="cpp03\PatternFacade.h" />
+    <ClInclude Include="cpp03\PatternFlyweight.h" />
     <ClInclude Include="cpp03\PatternInterface.h" />
     <ClInclude Include="cpp03\PatternObjectPool.h" />
     <ClInclude Include="cpp03\PatternPrototype.h" />
+    <ClInclude Include="cpp03\PatternProxy.h" />
     <ClInclude Include="cpp03\PatternSingleton.h" />
     <ClInclude Include="cpp03\TemplateExplicit.h" />
     <ClInclude Include="cpp03\TemplateImplicit.h" />

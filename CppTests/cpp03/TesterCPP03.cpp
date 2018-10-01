@@ -179,6 +179,8 @@ void TesterCPP03::test107()
 	app2->dosomething();
 }
 
+//========================================================================================
+//---- TEST 108: Design Pattern: Composite
 void TesterCPP03::test108()
 {
 	CompositeObject * obj = new CompositeObject();
@@ -196,6 +198,8 @@ void TesterCPP03::test108()
 
 }
 
+//========================================================================================
+//---- TEST 109: Design Pattern: Decorator
 void TesterCPP03::test109()
 {
 	SimpleChair * chairSimple = new SimpleChair();
@@ -214,6 +218,37 @@ void TesterCPP03::test109()
 	tableFancy.make();
 	tableFancy.breaktable();
 }
+//========================================================================================
+//---- TEST 110: Design Pattern: Facade
+void TesterCPP03::test110()
+{
+	examplefacade::Facade facade;
+
+	cout << "Run facade: " << facade.execute() << endl;
+}
+
+//========================================================================================
+//---- TEST 111: Design Pattern: Flyweight
+void TesterCPP03::test111()
+{
+	GuiIconCollection collection;
+
+	collection.initialize(10);
+
+	collection.geticon(3)->draw(2, 2);
+
+	collection.printactiveflyweights();
+}
+
+//========================================================================================
+//---- TEST 112: Design Pattern: Proxy
+void TesterCPP03::test112()
+{
+	exampleproxy::ObjectProxy obj(3);
+
+	obj.method();
+	obj->method();
+}
 
 void TesterCPP03::run(TestName03 testname)
 {
@@ -229,5 +264,8 @@ void TesterCPP03::run(TestName03 testname)
 	case TEST107: test107(); break;
 	case TEST108: test108(); break;
 	case TEST109: test109(); break;
+	case TEST110: test110(); break;
+	case TEST111: test111(); break;
+	case TEST112: test112(); break;
 	}
 }

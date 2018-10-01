@@ -56,6 +56,15 @@
     <Filter Include="cpp03\pattern\decorator">
       <UniqueIdentifier>{a9cb5f7d-e037-4929-bbd4-8dd540b9b06d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="cpp03\pattern\facade">
+      <UniqueIdentifier>{a62e3947-a0ec-4d1d-abca-6def7cab5f18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cpp03\pattern\flyweight">
+      <UniqueIdentifier>{d318d981-b5f3-485b-8f88-eef2b0490bbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cpp03\pattern\proxy">
+      <UniqueIdentifier>{343ae4b3-fb4b-475b-a780-5774e9031432}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
@@ -103,6 +112,15 @@
     </ClCompile>
     <ClCompile Include="cpp03\PatternDecorator.cpp">
       <Filter>cpp03\pattern\decorator</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp03\PatternFacade.cpp">
+      <Filter>cpp03\pattern\facade</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp03\PatternFlyweight.cpp">
+      <Filter>cpp03\pattern\flyweight</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp03\PatternProxy.cpp">
+      <Filter>cpp03\pattern\proxy</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -156,6 +174,15 @@
     </ClInclude>
     <ClInclude Include="cpp03\PatternDecorator.h">
       <Filter>cpp03\pattern\decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp03\PatternFacade.h">
+      <Filter>cpp03\pattern\facade</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp03\PatternFlyweight.h">
+      <Filter>cpp03\pattern\flyweight</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp03\PatternProxy.h">
+      <Filter>cpp03\pattern\proxy</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
