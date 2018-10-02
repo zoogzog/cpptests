@@ -118,6 +118,7 @@
     <ClCompile Include="cpp03\PatternAdapter.cpp" />
     <ClCompile Include="cpp03\PatternBridge.cpp" />
     <ClCompile Include="cpp03\PatternBuilder.cpp" />
+    <ClCompile Include="cpp03\PatternCommand.cpp" />
     <ClCompile Include="cpp03\PatternComposite.cpp" />
     <ClCompile Include="cpp03\PatternDecorator.cpp" />
     <ClCompile Include="cpp03\PatternDeviceA.cpp" />
@@ -125,10 +126,14 @@
     <ClCompile Include="cpp03\PatternDeviceFactory.cpp" />
     <ClCompile Include="cpp03\PatternFacade.cpp" />
     <ClCompile Include="cpp03\PatternFlyweight.cpp" />
+    <ClCompile Include="cpp03\PatternMemento.cpp" />
     <ClCompile Include="cpp03\PatternObjectPool.cpp" />
     <ClCompile Include="cpp03\PatternPrototype.cpp" />
     <ClCompile Include="cpp03\PatternProxy.cpp" />
+    <ClCompile Include="cpp03\PatternResponsibilityChain.cpp" />
     <ClCompile Include="cpp03\PatternSingleton.cpp" />
+    <ClCompile Include="cpp03\PatternState.cpp" />
+    <ClCompile Include="cpp03\PatternVisitor.cpp" />
     <ClCompile Include="cpp03\TemplateExplicit.cpp" />
     <ClCompile Include="cpp03\TesterCPP03.cpp" />
     <ClCompile Include="cpp11\CPP11Utils.cpp" />
@@ -139,6 +144,7 @@
     <ClInclude Include="cpp03\PatternAdapter.h" />
     <ClInclude Include="cpp03\PatternBridge.h" />
     <ClInclude Include="cpp03\PatternBuilder.h" />
+    <ClInclude Include="cpp03\PatternCommand.h" />
     <ClInclude Include="cpp03\PatternComposite.h" />
     <ClInclude Include="cpp03\PatternDecorator.h" />
     <ClInclude Include="cpp03\PatternDeviceA.h" />
@@ -147,10 +153,14 @@
     <ClInclude Include="cpp03\PatternFacade.h" />
     <ClInclude Include="cpp03\PatternFlyweight.h" />
     <ClInclude Include="cpp03\PatternInterface.h" />
+    <ClInclude Include="cpp03\PatternMemento.h" />
     <ClInclude Include="cpp03\PatternObjectPool.h" />
     <ClInclude Include="cpp03\PatternPrototype.h" />
     <ClInclude Include="cpp03\PatternProxy.h" />
+    <ClInclude Include="cpp03\PatternResponsibilityChain.h" />
     <ClInclude Include="cpp03\PatternSingleton.h" />
+    <ClInclude Include="cpp03\PatternState.h" />
+    <ClInclude Include="cpp03\PatternVisitor.h" />
     <ClInclude Include="cpp03\TemplateExplicit.h" />
     <ClInclude Include="cpp03\TemplateImplicit.h" />
     <ClInclude Include="cpp03\TesterCPP03.h" />

@@ -65,6 +65,21 @@
     <Filter Include="cpp03\pattern\proxy">
       <UniqueIdentifier>{343ae4b3-fb4b-475b-a780-5774e9031432}</UniqueIdentifier>
     </Filter>
+    <Filter Include="cpp03\pattern\chainofresp">
+      <UniqueIdentifier>{de7f3ded-802f-47ed-b155-54c9ada95d23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cpp03\pattern\command">
+      <UniqueIdentifier>{14d78bd3-6f30-4a1e-ab36-8713238189d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cpp03\pattern\memento">
+      <UniqueIdentifier>{ddea1a4d-18c5-464a-918e-b07e3270228a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cpp03\pattern\state">
+      <UniqueIdentifier>{c551608d-5542-4cae-bf2e-542ee68d7983}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cpp03\pattern\visitor">
+      <UniqueIdentifier>{975571fe-afdd-499b-85d0-14d990b1b37a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
@@ -121,6 +136,21 @@
     </ClCompile>
     <ClCompile Include="cpp03\PatternProxy.cpp">
       <Filter>cpp03\pattern\proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp03\PatternResponsibilityChain.cpp">
+      <Filter>cpp03\pattern\chainofresp</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp03\PatternCommand.cpp">
+      <Filter>cpp03\pattern\command</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp03\PatternMemento.cpp">
+      <Filter>cpp03\pattern\memento</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp03\PatternState.cpp">
+      <Filter>cpp03\pattern\state</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp03\PatternVisitor.cpp">
+      <Filter>cpp03\pattern\visitor</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -183,6 +213,21 @@
     </ClInclude>
     <ClInclude Include="cpp03\PatternProxy.h">
       <Filter>cpp03\pattern\proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp03\PatternResponsibilityChain.h">
+      <Filter>cpp03\pattern\chainofresp</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp03\PatternCommand.h">
+      <Filter>cpp03\pattern\command</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp03\PatternMemento.h">
+      <Filter>cpp03\pattern\memento</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp03\PatternState.h">
+      <Filter>cpp03\pattern\state</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp03\PatternVisitor.h">
+      <Filter>cpp03\pattern\visitor</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

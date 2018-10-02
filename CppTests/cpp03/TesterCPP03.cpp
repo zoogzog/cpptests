@@ -250,6 +250,77 @@ void TesterCPP03::test112()
 	obj->method();
 }
 
+//========================================================================================
+//---- TEST 113: Design Pattern: Chain of Responsibility
+void TesterCPP03::test113()
+{
+	CustomHandlerA roothandler;
+	CustomHandlerB handlerb;
+	CustomHandlerC handlerc;
+
+	roothandler.nextAdd(&handlerb);
+	roothandler.nextAdd(&handlerc);
+
+	roothandler.processevenet(1);
+	roothandler.processevenet(2);
+	roothandler.processevenet(3);
+	roothandler.processevenet(4);
+}
+
+//========================================================================================
+//---- TEST 114: Design Pattern: Command
+void TesterCPP03::test114()
+{
+	CommandReceiver cmdr;
+	CommandA cmda(&cmdr);
+	CommandB cmdb(&cmdr);
+	CommandSender cmds(&cmda, &cmdb);
+
+	cmds.runcommandA();
+	cmds.runcommandB();
+
+}
+
+//========================================================================================
+//---- TEST 115: Design Pattern: Memento
+void TesterCPP03::test115()
+{
+	examplememento::Object obj;
+
+	examplememento::Command command;
+	command.bindobject(&obj);
+
+	cout << "Object value: " << obj.data << endl;
+	command.execute(& examplememento::Object::methodadd);
+	cout << "Object value: " << obj.data << endl;
+	command.execute(&examplememento::Object::methodmult);
+	cout << "Object value: " << obj.data << endl;
+	command.revert();
+	cout << "Object value: " << obj.data << endl;
+}
+
+//========================================================================================
+//---- TEST 116: Design Pattern: State
+void TesterCPP03::test116()
+{
+	examplestate::Object obj;
+
+	obj.methodON();
+}
+
+//========================================================================================
+//---- TEST 116: Design Pattern: Visitor
+void TesterCPP03::test117()
+{
+	examplevisitor::ObjectA obja;
+	examplevisitor::ObjectB objb;
+
+	examplevisitor::VisitorA va;
+	examplevisitor::VisitorB vb;
+
+	obja.accept(& va);
+}
+
 void TesterCPP03::run(TestName03 testname)
 {
 	switch (testname)
@@ -267,5 +338,10 @@ void TesterCPP03::run(TestName03 testname)
 	case TEST110: test110(); break;
 	case TEST111: test111(); break;
 	case TEST112: test112(); break;
+	case TEST113: test113(); break;
+	case TEST114: test114(); break;
+	case TEST115: test115(); break;
+	case TEST116: test116(); break;
+	case TEST117: test117(); break;
 	}
 }

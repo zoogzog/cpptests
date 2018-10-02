@@ -18,6 +18,11 @@
 #include "PatternFacade.h"
 #include "PatternFlyweight.h"
 #include "PatternProxy.h"
+#include "PatternResponsibilityChain.h"
+#include "PatternCommand.h"
+#include "PatternMemento.h"
+#include "PatternState.h"
+#include "PatternVisitor.h"
 
 typedef std::chrono::high_resolution_clock Clock;
 
@@ -56,9 +61,24 @@ private:
 	void test111();
 	//---- TEST112 Pattern: Proxy
 	void test112();
+	//---- TEST113 Pattern: Chain of Responsibility
+	void test113();
+	//---- TEST114 Pattern: Command
+	void test114();
+	//---- TEST115 Pattern: Memento
+	void test115();
+	//---- TEST116 Pattern: State
+	void test116();
+	//---- TEST117 Pattern: Visitor
+	void test117();
 
 public:
-	enum TestName03 { TEST001, TEST101, TEST102, TEST103, TEST104, TEST105, TEST106, TEST107, TEST108, TEST109, TEST110, TEST111, TEST112};
+	enum TestName03 
+	{ 
+		TEST001, TEST101, TEST102, TEST103, TEST104, TEST105, 
+		TEST106, TEST107, TEST108, TEST109, TEST110, TEST111, 
+		TEST112, TEST113, TEST114, TEST115, TEST116, TEST117
+	};
 
 	void run(TestName03 testname);
 };
