@@ -136,6 +136,9 @@
     <ClCompile Include="cpp03\PatternVisitor.cpp" />
     <ClCompile Include="cpp03\TemplateExplicit.cpp" />
     <ClCompile Include="cpp03\TesterCPP03.cpp" />
+    <ClCompile Include="cpp11\CPP11Callback.cpp" />
+    <ClCompile Include="cpp11\CPP11Smrtptr.cpp" />
+    <ClCompile Include="cpp11\CPP11Thread.cpp" />
     <ClCompile Include="cpp11\CPP11Utils.cpp" />
     <ClCompile Include="cpp11\TesterCPP11.cpp" />
     <ClCompile Include="main.cpp" />
@@ -164,6 +167,9 @@
     <ClInclude Include="cpp03\TemplateExplicit.h" />
     <ClInclude Include="cpp03\TemplateImplicit.h" />
     <ClInclude Include="cpp03\TesterCPP03.h" />
+    <ClInclude Include="cpp11\CPP11Callback.h" />
+    <ClInclude Include="cpp11\CPP11Smrtptr.h" />
+    <ClInclude Include="cpp11\CPP11Thread.h" />
     <ClInclude Include="cpp11\CPP11Utils.h" />
     <ClInclude Include="cpp11\TesterCPP11.h" />
   </ItemGroup>

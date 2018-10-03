@@ -80,6 +80,15 @@
     <Filter Include="cpp03\pattern\visitor">
       <UniqueIdentifier>{975571fe-afdd-499b-85d0-14d990b1b37a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="cpp11\smrtptr">
+      <UniqueIdentifier>{31850ddb-1286-4119-bc37-87178e78ed36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cpp11\callback">
+      <UniqueIdentifier>{14adbfef-2aa9-4746-8637-6f57e71a469a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cpp11\thread">
+      <UniqueIdentifier>{86276422-89fb-4692-b8b9-c6dbf1555f36}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
@@ -151,6 +160,15 @@
     </ClCompile>
     <ClCompile Include="cpp03\PatternVisitor.cpp">
       <Filter>cpp03\pattern\visitor</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp11\CPP11Smrtptr.cpp">
+      <Filter>cpp11\smrtptr</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp11\CPP11Callback.cpp">
+      <Filter>cpp11\callback</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp11\CPP11Thread.cpp">
+      <Filter>cpp11\thread</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -228,6 +246,15 @@
     </ClInclude>
     <ClInclude Include="cpp03\PatternVisitor.h">
       <Filter>cpp03\pattern\visitor</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp11\CPP11Smrtptr.h">
+      <Filter>cpp11\smrtptr</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp11\CPP11Callback.h">
+      <Filter>cpp11\callback</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp11\CPP11Thread.h">
+      <Filter>cpp11\thread</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

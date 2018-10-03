@@ -12,8 +12,8 @@ void main()
 	TesterCPP03 testercpp03;
 	TesterCPP11 testercpp11;
 
-	//testercpp11.run(TesterCPP11::TestName11::TEST001);
-	testercpp03.run(TesterCPP03::TestName03::TEST117);
+	testercpp11.run(TesterCPP11::TestName11::TEST008);
+	//testercpp03.run(TesterCPP03::TestName03::TEST117);
 
 	//---- Prevent console from closing
 	getchar();

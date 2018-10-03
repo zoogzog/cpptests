@@ -72,6 +72,27 @@ void TesterCPP11::test005()
 	cout << "end: " <<vtemplatesum(2, 3.4, "aaa") << endl;
 }
 
+//---- TEST 006: Smart pointers
+void TesterCPP11::test006()
+{
+	smrtptr::Test001::run();
+	smrtptr::Test002::run();
+}
+
+//---- TEST 007: callbacks and function pointers, lambda
+void TesterCPP11::test007()
+{
+	callback::Test001::run();
+	callback::Test002::run();
+}
+
+//---- TEST 008: Multi-threading
+void TesterCPP11::test008()
+{
+	examplethread::ThreadRunner::run();
+	examplethread::ThreadRunner::runfuture();
+}
+
 void TesterCPP11::run(TestName11 testname)
 {
 	switch (testname)
@@ -82,5 +103,8 @@ void TesterCPP11::run(TestName11 testname)
 	case TEST003: test003(); break;
 	case TEST004: test004(); break;
 	case TEST005: test005(); break;
+	case TEST006: test006(); break;
+	case TEST007: test007(); break;
+	case TEST008: test008(); break;
 	}
 }

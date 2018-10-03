@@ -8,6 +8,9 @@
 #include <typeinfo>
 
 #include "CPP11Utils.h"
+#include "CPP11Smrtptr.h"
+#include "CPP11Callback.h"
+#include "CPP11Thread.h"
 
 using namespace std;
 using namespace std::placeholders;
@@ -33,10 +36,20 @@ private:
 	void test005();
 
 	//-------------------- SMART POINTERS  -------------------
+	void test006();
 
+	//-------------------- CALLBACKS -------------------
+	void test007();
+
+	//-------------------- THREADING -------------------
+	void test008();
 
 public:
-	enum TestName11 { TEST001, TEST002, TEST003, TEST004, TEST005 };
+	enum TestName11 
+	{ 
+		TEST001, TEST002, TEST003, TEST004, TEST005, TEST006,
+		TEST007, TEST008
+	};
 
 	void run(TestName11 testname);
 };
